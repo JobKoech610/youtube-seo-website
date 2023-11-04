@@ -319,7 +319,7 @@ span>a{
     }
     .section-one{
     height: 200vh;
-    width: 100%;
+    width: 125vw;
     }
     .cards {
         flex-direction: column;
@@ -361,7 +361,7 @@ span>a{
     }
 
     #contact{
-        width: 110vw;
+        width: 125vw;
         height: 310vh;
     }
     
@@ -401,7 +401,7 @@ span>a{
         width: 100%;  
     }
     .logo{
-        right: 5rem;
+        right: 4rem;
     }
    .links{
     left: 0.2rem;
@@ -433,7 +433,7 @@ span>a{
     }
     .section-one{
     height: 200vh;
-    width: 110vw;
+    width: 125vw;
     }
 
    
@@ -477,7 +477,7 @@ span>a{
         }
     
         #contact{
-            width: 110vw;
+            width: 125vw;
             height: 310vh;
         }
         
@@ -507,6 +507,8 @@ span>a{
     
         .touch-text{
             width: 90%;
+            position: relative;
+            left: 2rem;
         }
 } 
   
@@ -519,7 +521,7 @@ span>a{
 
     .logo{
         position: relative;
-        right: 12rem;
+        right: 11rem;
         color: #fff;
     }
     .links{
@@ -530,6 +532,8 @@ span>a{
         position: relative;
         top: 8rem;
         gap: 10px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .text{
         width: 70%;
@@ -546,7 +550,10 @@ span>a{
         height: 110vh;
         width:100vw;
     }
-
+    .cards{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .heading{
         width: 90%;
         line-height: 1.2em;
@@ -669,18 +676,32 @@ span>a{
 
     .section-one{
         background-color: #4e91fd;
-        height: 100vh;
+        height: 120vh;
         width: 100%;
     }
+
     .home{
         position: relative;
-        top: 5rem;
+        top: 10rem;
+    }
+    .text{
+        position: relative;
+        right: 8.5rem;
     }
     .profile-image>img{
-        width: 500px;
-        height: 550px;
+        width: 400px;
+        height: 500px;
         border-radius: 10px;
         position: relative;
         top: 1rem;
+    }
+    #contact{
+        height: 125vh;
+        width: 100%;
+        background-color: #f7f2cd;
+    }
+    .content{
+        position: relative;
+        top: 10rem;
     }
 } 
