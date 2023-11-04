@@ -10,6 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     height:100%;
     width:100%;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -74,6 +75,7 @@ li>a:hover{
     justify-content: center;
     position: relative;
     top: 10rem;
+    
 }
 
 .home>div{
@@ -140,7 +142,6 @@ line-height: 1.7em;
     height: 100vh;
     width: 100%;
     background-color: #f7f2cd;
-    
 }
 
 .content{
@@ -185,6 +186,7 @@ line-height: 1.7em;
     height: 11rem;
     transition: 500ms;
 }
+
 .card-four:hover{
     width: 11rem;
     height: 11rem;
@@ -273,3 +275,412 @@ span>a{
     text-decoration: none;
 } 
 
+/* media query */
+
+
+
+
+
+  /* Media Query for Mobile Devices */ 
+  @media (max-width: 480px) { 
+    .header{
+        width: 100%;  
+    }
+    .logo{
+        right: 1rem;
+    }
+   .links{
+    left: 20px;
+   }
+    .profile-image{
+        display: inline;
+    }
+    .profile-image>img{
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        
+    }
+
+    .home{
+        flex-direction: column;
+        top: 0;
+        gap: 10px;
+        align-items: center;
+      
+    }
+    .describe{
+        width: 90%;
+    }
+    .text{
+        width: 100%;
+        position: relative;
+        left: 1rem;
+    }
+    .section-one{
+    height: 200vh;
+    width: 100%;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cards>div {
+        width: 70%;
+        position: relative;
+        left: 50px;
+        height: 10rem;
+    }
+
+    .card-one:hover{
+        width: 70%;
+        height: 11rem;
+        transition: none;
+        height: 10rem;
+    }
+    
+    .card-two:hover{
+        width: 70%;
+        height: 11rem;
+        transition: none;
+        height: 10rem;
+    }
+    .card-three:hover{
+        width: 70%;
+        height: 11rem;
+        transition: none;
+        height: 10rem;
+    }
+    
+    .card-four:hover{
+        width: 70%;
+        height: 11rem;
+        transition: none;
+        height: 10rem;
+    }
+
+    #contact{
+        width: 110vw;
+        height: 310vh;
+    }
+    
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+
+    .form {
+        right: 0;
+    }
+
+    .form>div {
+        margin-bottom: 20px;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+
+    .getintouch {
+        width: 100%;
+        text-align: center;
+    }
+
+    .touch-text{
+        width: 90%;
+    }
+   
+} 
+  
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 767px) { 
+    .header{
+        width: 100%;  
+    }
+    .logo{
+        right: 5rem;
+    }
+   .links{
+    left: 0.2rem;
+   }
+    .profile-image{
+        display: inline;
+    }
+    .profile-image>img{
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        
+    }
+
+    .home{
+        flex-direction: column;
+        top: 0;
+        gap: 10px;
+        align-items: center;
+      
+    }
+    .describe{
+        width: 90%;
+    }
+    .text{
+        width: 100%;
+        position: relative;
+        left: 1rem;
+    }
+    .section-one{
+    height: 200vh;
+    width: 110vw;
+    }
+
+   
+        .cards {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
+        .cards>div {
+            width: 70%;
+            position: relative;
+            left: 50px;
+            height: 10rem;
+        }
+    
+        .card-one:hover{
+            width: 70%;
+            height: 11rem;
+            transition: none;
+            height: 10rem;
+        }
+        
+        .card-two:hover{
+            width: 70%;
+            height: 11rem;
+            transition: none;
+            height: 10rem;
+        }
+        .card-three:hover{
+            width: 70%;
+            height: 11rem;
+            transition: none;
+            height: 10rem;
+        }
+        
+        .card-four:hover{
+            width: 70%;
+            height: 11rem;
+            transition: none;
+            height: 10rem;
+        }
+    
+        #contact{
+            width: 110vw;
+            height: 310vh;
+        }
+        
+        .contact-section {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            
+        }
+    
+        .form {
+            right: 0;
+        }
+    
+        .form>div {
+            margin-bottom: 20px;
+        }
+    
+        input, textarea {
+            width: 100%;
+        }
+    
+        .getintouch {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .touch-text{
+            width: 90%;
+        }
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+     
+    .header{
+        width: 100%;
+      }
+
+    .logo{
+        position: relative;
+        right: 12rem;
+        color: #fff;
+    }
+    .links{
+        position: relative;
+        left: 1rem;
+    }
+    .home{
+        position: relative;
+        top: 8rem;
+        gap: 10px;
+    }
+    .text{
+        width: 70%;
+        left: 0.5rem;
+    }
+    .profile-image>img{
+        width: 280px;
+        height: 280px;
+        border-radius: 10px;
+        
+    }
+    .section-one{
+        background-color: #4e91fd;
+        height: 110vh;
+        width:100vw;
+    }
+
+    .heading{
+        width: 90%;
+        line-height: 1.2em;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+        margin-top: 4px;
+    } 
+
+    .describe{
+        width: 90%;
+    }
+
+    #contact{
+        height: 180vh;
+        width: 100%;
+        background-color: #f7f2cd;
+    }
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 2rem;
+    }
+
+    .submit-btn{
+        margin-left: 10rem;
+    }
+    .content{
+        top: 2rem;
+    }
+    .getintouch{
+        width: 38rem;
+    }
+    .touch-text{
+        width: 85%;
+    } 
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    .header{
+        width: 100%;
+      }
+
+    .logo{
+        position: relative;
+        right: 19rem;
+        color: #fff;
+    }
+    .links{
+        position: relative;
+        left: 1rem;
+    }
+    .home{
+        position: relative;
+        top: 8rem;
+        gap: 10px;
+    }
+    .text{
+        width: 70%;
+        left: 0.5rem;
+    }
+    .profile-image>img{
+        width: 280px;
+        height: 280px;
+        border-radius: 10px;
+        
+    }
+    .section-one{
+        background-color: #4e91fd;
+        height: 110vh;
+        width:100vw;
+    }
+
+    .heading{
+        width: 90%;
+        line-height: 1.2em;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+        margin-top: 4px;
+    } 
+    .describe{
+        width: 90%;
+    }
+    #contact{
+        height: 180vh;
+        width: 100%;
+        background-color: #f7f2cd;
+    }
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 2rem;
+    }
+
+    .submit-btn{
+        margin-left: 10rem;
+    }
+    .content{
+        top: 2rem;
+    }
+    .getintouch{
+        width: 38rem;
+    }
+    .touch-text{
+        width: 85%;
+    }
+} 
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+    .header{
+        width: 100%;
+      }
+
+    .section-one{
+        background-color: #4e91fd;
+        height: 100vh;
+        width: 100%;
+    }
+    .home{
+        position: relative;
+        top: 5rem;
+    }
+    .profile-image>img{
+        width: 500px;
+        height: 550px;
+        border-radius: 10px;
+        position: relative;
+        top: 1rem;
+    }
+} 
