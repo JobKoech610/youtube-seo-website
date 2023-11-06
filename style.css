@@ -28,9 +28,10 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 1030;
-	background-color: #5b6178;
+	background-color: #333;
 
 }
+
 
 #tube {
 	background-color: red;
@@ -89,6 +90,10 @@ li>a:hover {
 	line-height: 1.7em;
 	font-size: 35px;
 	font-family: 'Lora', serif;
+}
+
+.heading>a{
+	color: black;
 }
 
 .sub-heading {
@@ -164,8 +169,8 @@ li>a:hover {
 .cards>div {
 
 	border-radius: 15px;
-	width: 10rem;
-	height: 10rem;
+	width: 12rem;
+	height: 12rem;
 	padding: 10px 10px;
 	text-align: center;
 	background-color: #ffffff;
@@ -175,26 +180,26 @@ li>a:hover {
 }
 
 .card-one:hover {
-	width: 11rem;
-	height: 11rem;
+	width: 11.5rem;
+	height: 11.5rem;
 	transition: 500ms;
 }
 
 .card-two:hover {
-	width: 11rem;
-	height: 11rem;
+	width: 11.5rem;
+	height: 11.5rem;
 	transition: 500ms;
 }
 
 .card-three:hover {
-	width: 11rem;
-	height: 11rem;
+	width: 11.5rem;
+	height: 11.5rem;
 	transition: 500ms;
 }
 
 .card-four:hover {
-	width: 11rem;
-	height: 11rem;
+	width: 11.5rem;
+	height: 11.5rem;
 	transition: 500ms;
 }
 
@@ -203,7 +208,7 @@ li>a:hover {
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 30px;
-	gap: 10rem;
+	
 }
 
 
@@ -241,8 +246,8 @@ textarea {
 
 .submit-btn {
 	box-shadow: 0px 1px 0px 0px #f0f7fa;
-	background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-	background-color: #33bdef;
+	background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color: rgb(255, 0, 0);
 	border-radius: 6px;
 	border: 1px solid #057fd0;
 	display: inline-block;
@@ -256,8 +261,8 @@ textarea {
 	text-shadow: 0px -1px 0px #5b6178;
 
 	&:hover {
-		background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-		background-color: #019ad2;
+		background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+		background-color: rgb(255, 0, 0);
 	}
 
 	&:active {
@@ -267,7 +272,7 @@ textarea {
 }
 
 .getintouch {
-	width: 25rem;
+	width: 35rem;
 	line-height: 1.2rem;
 	font-size: 20px;
 }
@@ -285,6 +290,105 @@ textarea {
 span>a {
 	text-decoration: none;
 }
+
+.partnership{
+	height: 95vh;
+}
+
+.container-partnership {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tools-partnerships {
+    height: 100vh;
+   width: 100%;
+    background-color: #f9f9f9;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #333;
+	
+}
+
+.tools-head {
+    font-size: 2em;
+    color: #fff;
+	position: relative;
+	bottom: 5rem;
+	
+}
+
+.tools-head3 {
+    font-size: 1.5em;
+	color: #fff;
+	
+}
+
+
+
+.tools-text {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.tools-text>a{
+	color: #fff;
+}
+
+.benefit-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.tools-benefits li {
+    margin-bottom: 10px;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.link:hover {
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color: rgb(255, 0, 0);
+}
+
+/* Subsection styles */
+
+.subsection {
+    flex: 0 0 calc(43.33% - 30px);
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.2s;
+    margin-right: 20px;
+	background-color: rgba(255,255,255,.1);
+	backdrop-filter: blur(5px);
+	
+}
+
+.subsection:hover {
+    transform: translateY(-5px);
+}
+
 
 /* media query */
 
@@ -723,14 +827,14 @@ span>a {
 
 	.section-one {
 		background-color: #4e91fd;
-		height: 125vh;
+		height: 95vh;
 		width: 100%;
 	}
 
-	.home {
+	/* .home {
 		position: relative;
 		top: 10rem;
-	}
+	} */
 
 	.text {
 		position: relative;
@@ -746,13 +850,13 @@ span>a {
 	}
 
 	#contact {
-		height: 140vh;
+		height: 95vh;
 		width: 100%;
 		background-color: #f7f2cd;
 	}
 
-	.content {
+	/* .content {
 		position: relative;
 		top: 10rem;
-	}
+	} */
 }
