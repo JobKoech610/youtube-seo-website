@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -515,16 +515,26 @@ span>a {
 		width: 90%;
 	}
 
+	.container-partnership {
+        justify-content: center;
+    }
+    
+    .subsection {
+        flex: 0 0 calc(100% - 30px);
+    }
+
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
 	.header {
-		width: 100%;
+		width: 130vw;
+		
 	}
 
 	.logo {
-		right: 4rem;
+		right: 2rem;
+		padding-left: 0.5rem;
 	}
 
 	.links {
@@ -562,7 +572,7 @@ span>a {
 
 	.section-one {
 		height: 200vh;
-		width: 125vw;
+		width: 130vw;
 	}
 
 
@@ -574,7 +584,7 @@ span>a {
 	.cards>div {
 		width: 70%;
 		position: relative;
-		left: 50px;
+		left: 100px;
 		height: 10rem;
 	}
 
@@ -607,7 +617,7 @@ span>a {
 	}
 
 	#contact {
-		width: 125vw;
+		width: 130vw;
 		height: 310vh;
 	}
 
@@ -626,9 +636,15 @@ span>a {
 		margin-bottom: 20px;
 	}
 
-	input,
+	
 	textarea {
 		width: 100%;
+	}
+    input{
+		width: 40vh;
+	}
+	.submit-btn {
+		margin-left: 10rem;
 	}
 
 	.getintouch {
@@ -641,18 +657,39 @@ span>a {
 		position: relative;
 		left: 2rem;
 	}
+	.tools-partnerships{
+		width: 130vw;
+		height: fit-content;
+
+	}
+	.tools-head{
+		bottom: 0;
+	}
+	
+
+	.container-partnership {
+        justify-content: center;
+		height: auto;
+    }
+    
+    .subsection {
+        flex: 0 0 calc(100% - 30px);
+    }
+
+	
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	.header {
-		width: 100%;
+		width: 140vh;
+		
 	}
 
 	.logo {
 		position: relative;
-		right: 11rem;
+		right: 9rem;
 		color: #fff;
 	}
 
@@ -704,6 +741,10 @@ span>a {
 		width: 90%;
 	}
 
+	.tools-head{
+		bottom: 0;
+	}
+
 	#contact {
 		height: 180vh;
 		width: 100%;
@@ -743,7 +784,7 @@ span>a {
 
 	.logo {
 		position: relative;
-		right: 19rem;
+		right: 14rem;
 		color: #fff;
 	}
 
@@ -774,6 +815,9 @@ span>a {
 		background-color: #4e91fd;
 		height: 110vh;
 		width: 100vw;
+	}
+	.tools-head{
+		bottom: 1.5rem;
 	}
 
 	.heading {
@@ -824,12 +868,18 @@ span>a {
 	.header {
 		width: 100%;
 	}
+	.logo {
+		position: relative;
+		right: 20rem;
+		color: #fff;
+	}
 
 	.section-one {
 		background-color: #4e91fd;
-		height: 95vh;
+		height: 130vh;
 		width: 100%;
 	}
+
 
 	/* .home {
 		position: relative;
@@ -850,7 +900,7 @@ span>a {
 	}
 
 	#contact {
-		height: 100vh;
+		height: 130vh;
 		width: 100%;
 		background-color: #f7f2cd;
 	}
